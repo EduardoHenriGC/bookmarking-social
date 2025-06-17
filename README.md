@@ -1,16 +1,101 @@
-# Laravel + PrimeVue Starter Kit
+# 📚 Laravel + PrimeVue Starter Project
 
-## About
+![Laravel](https://img.shields.io/badge/Laravel-v12-%23f9322c)
+![Inertia.js](https://img.shields.io/badge/Inertia.js-v2-%236b46c1)
+![Vue.js](https://img.shields.io/badge/Vue.js-v3.5-%2342b883)
+![PrimeVue](https://img.shields.io/badge/PrimeVue-v4-%2310b981)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-%230284c7)
 
-![Static Badge](https://img.shields.io/badge/Laravel%20-%20v12%20-%20%23f9322c) ![Static Badge](https://img.shields.io/badge/Inertia.js%20-%20v2%20-%20%236b46c1) ![Static Badge](<https://img.shields.io/badge/Vue.js%20-%20v3.5%20-%20rgb(66%20184%20131)>) ![Static Badge](<https://img.shields.io/badge/PrimeVue%20-%20v4%20-%20rgb(16%20185%20129)>) ![Static Badge](https://img.shields.io/badge/Tailwind%20CSS%20-%20v4%20-%20%230284c7)
+Projeto base utilizando [Laravel](https://laravel.com/docs/master), [Inertia.js](https://inertiajs.com/), [Vue 3](https://vuejs.org/), [PrimeVue](https://primevue.org/) e [Tailwind CSS](https://tailwindcss.com/).
 
-A basic authentication starter kit using [Laravel](https://laravel.com/docs/master), [Intertia.js](https://inertiajs.com/), [PrimeVue](https://primevue.org/) components, and [Tailwind CSS](https://tailwindcss.com/).
+---
 
-> [!TIP]
-> Do you need a separate Vue SPA front-end instead of using Inertia.js? Consider using the [PrimeVue SPA + Laravel API Starter Kit](https://github.com/connorabbas/laravel-api-primevue-starter-kit) instead.
+## 🚀 Clone o projeto
 
-## Resources
+```bash
+git clone https://github.com/EduardoHenriGC/bookmarking-social.git
+cd bookmarking-social
+```
 
-[🌐 **Demo Application**](https://laravel-primevue-starter-kit-demo.laravel.cloud/)
+## ⚙️ Configuração do Ambiente
 
-[📚 **Documentation**](https://connorabbas.github.io/laravel-primevue-starter-kit-docs/)
+Copie o arquivo `.env.example` para `.env`:
+
+### Unix/Mac
+```bash
+cp .env.example .env
+```
+
+### Windows (PowerShell)
+```powershell
+copy .env.example .env
+```
+
+Gere a chave da aplicação:
+
+```bash
+php artisan key:generate
+```
+
+Configure o banco de dados no arquivo `.env` e então rode as migrations:
+
+```bash
+php artisan migrate
+```
+
+## 📦 Instalar dependências
+
+### Backend (PHP / Laravel)
+```bash
+composer install
+```
+
+### Frontend (Vue / Tailwind / PrimeVue)
+```bash
+npm install
+```
+
+## ✅ Tudo pronto!
+
+Agora você pode iniciar o servidor de desenvolvimento com:
+
+```bash
+composer run dev
+```
+
+## ✨ Tecnologias Utilizadas
+
+- **Laravel 12** – Backend robusto com Eloquent ORM
+- **Inertia.js 2** – Ponte entre Laravel e Vue
+- **Vue.js 3.5** – Framework progressivo JavaScript
+- **PrimeVue 4** – Componentes UI ricos e acessíveis
+- **Tailwind CSS 4** – Estilização rápida e responsiva
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
+├── app/
+├── resources/
+│   ├── js/
+│   │   ├── Pages/
+│   │   └── Components/
+├── routes/
+│   └── web.php
+├── public/
+├── database/
+└── ...
+```
+
+---
+
+## 🧪 Contribuições
+
+Pull Requests são bem-vindos! Sinta-se à vontade para sugerir melhorias, reportar bugs ou adicionar novas funcionalidades.
+
+---
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT.
