@@ -1,4 +1,4 @@
-# 📚 Laravel + PrimeVue Starter Project
+# 📚 Laravel + PrimeVue Project
 
 ![Laravel](https://img.shields.io/badge/Laravel-v12-%23f9322c)
 ![Inertia.js](https://img.shields.io/badge/Inertia.js-v2-%236b46c1)
@@ -60,8 +60,16 @@ npm install
 Agora você pode iniciar o servidor de desenvolvimento com:
 
 ```bash
-composer run dev
+php artisan serve
 ```
+
+E em outro terminal, rodar o Vite:
+
+```bash
+npm run dev
+```
+
+---
 
 ## ✨ Tecnologias Utilizadas
 
